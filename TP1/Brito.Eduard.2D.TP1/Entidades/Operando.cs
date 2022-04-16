@@ -13,7 +13,7 @@ namespace Entidades
 
         public Operando()
         {
-            this.numero = 0;
+            this.numero = 1;
         }
 
 
