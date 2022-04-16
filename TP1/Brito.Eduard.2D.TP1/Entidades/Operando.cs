@@ -8,7 +8,7 @@ namespace Entidades
 {
     public class Operando
     {
-        private double numero;
+        double numero;
 
 
         public Operando()
@@ -17,7 +17,7 @@ namespace Entidades
         }
 
 
-        public Operando(double numero)
+        public Operando(double numero): this()
         {
             this.numero = numero;
         }
