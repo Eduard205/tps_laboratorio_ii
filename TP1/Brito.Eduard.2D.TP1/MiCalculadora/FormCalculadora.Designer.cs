@@ -65,9 +65,9 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(344, 219);
+            this.btnCerrar.Location = new System.Drawing.Point(344, 216);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(145, 40);
+            this.btnCerrar.Size = new System.Drawing.Size(145, 43);
             this.btnCerrar.TabIndex = 6;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -132,22 +132,22 @@
             // 
             // lblResultado
             // 
-            this.lblResultado.AutoSize = true;
-            this.lblResultado.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblResultado.Location = new System.Drawing.Point(451, 51);
+            this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblResultado.Location = new System.Drawing.Point(2, 51);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(51, 21);
+            this.lblResultado.Size = new System.Drawing.Size(503, 28);
             this.lblResultado.TabIndex = 0;
-            this.lblResultado.Text = "label1";
+            this.lblResultado.Text = "lblResultado";
+            this.lblResultado.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lstOperaciones
             // 
             this.lstOperaciones.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lstOperaciones.FormattingEnabled = true;
             this.lstOperaciones.ItemHeight = 20;
-            this.lstOperaciones.Location = new System.Drawing.Point(525, 24);
+            this.lstOperaciones.Location = new System.Drawing.Point(511, 24);
             this.lstOperaciones.Name = "lstOperaciones";
-            this.lstOperaciones.Size = new System.Drawing.Size(265, 384);
+            this.lstOperaciones.Size = new System.Drawing.Size(285, 384);
             this.lstOperaciones.TabIndex = 0;
             // 
             // FormCalculadora
