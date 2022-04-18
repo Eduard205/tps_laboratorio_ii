@@ -42,17 +42,19 @@
             // 
             // btnOperar
             // 
+            this.btnOperar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnOperar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnOperar.Location = new System.Drawing.Point(12, 216);
             this.btnOperar.Name = "btnOperar";
             this.btnOperar.Size = new System.Drawing.Size(129, 43);
             this.btnOperar.TabIndex = 4;
             this.btnOperar.Text = "Operar";
-            this.btnOperar.UseVisualStyleBackColor = true;
+            this.btnOperar.UseVisualStyleBackColor = false;
             this.btnOperar.Click += new System.EventHandler(this.btnOperar_Click);
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(180, 216);
+            this.btnLimpiar.Location = new System.Drawing.Point(174, 216);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(139, 43);
             this.btnLimpiar.TabIndex = 5;
@@ -95,59 +97,64 @@
             // txtNumero1
             // 
             this.txtNumero1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNumero1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtNumero1.ImeMode = System.Windows.Forms.ImeMode.On;
             this.txtNumero1.Location = new System.Drawing.Point(12, 128);
             this.txtNumero1.Name = "txtNumero1";
-            this.txtNumero1.Size = new System.Drawing.Size(185, 23);
+            this.txtNumero1.Size = new System.Drawing.Size(185, 29);
             this.txtNumero1.TabIndex = 1;
             this.txtNumero1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtNumero2
             // 
             this.txtNumero2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNumero2.Location = new System.Drawing.Point(304, 128);
+            this.txtNumero2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtNumero2.Location = new System.Drawing.Point(304, 129);
             this.txtNumero2.Name = "txtNumero2";
-            this.txtNumero2.Size = new System.Drawing.Size(185, 23);
+            this.txtNumero2.Size = new System.Drawing.Size(185, 29);
             this.txtNumero2.TabIndex = 3;
             this.txtNumero2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // cmbOperador
             // 
             this.cmbOperador.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbOperador.FormattingEnabled = true;
+            this.cmbOperador.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cmbOperador.Items.AddRange(new object[] {
             " ",
             "+",
             "-",
             "/",
             "*"});
-            this.cmbOperador.Location = new System.Drawing.Point(211, 128);
+            this.cmbOperador.Location = new System.Drawing.Point(215, 129);
             this.cmbOperador.Name = "cmbOperador";
-            this.cmbOperador.Size = new System.Drawing.Size(76, 23);
+            this.cmbOperador.Size = new System.Drawing.Size(72, 29);
             this.cmbOperador.TabIndex = 2;
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
+            this.lblResultado.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblResultado.Location = new System.Drawing.Point(451, 51);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(38, 15);
+            this.lblResultado.Size = new System.Drawing.Size(51, 21);
             this.lblResultado.TabIndex = 0;
             this.lblResultado.Text = "label1";
             // 
             // lstOperaciones
             // 
+            this.lstOperaciones.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lstOperaciones.FormattingEnabled = true;
-            this.lstOperaciones.ItemHeight = 15;
+            this.lstOperaciones.ItemHeight = 20;
             this.lstOperaciones.Location = new System.Drawing.Point(525, 24);
             this.lstOperaciones.Name = "lstOperaciones";
-            this.lstOperaciones.Size = new System.Drawing.Size(265, 394);
+            this.lstOperaciones.Size = new System.Drawing.Size(265, 384);
             this.lstOperaciones.TabIndex = 0;
             // 
             // FormCalculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lstOperaciones);
             this.Controls.Add(this.lblResultado);

@@ -19,3 +19,4 @@ C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\TP1\Brito.Eduard.2D.TP1\Mi
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\TP1\Brito.Eduard.2D.TP1\MiCalculadora\bin\Debug\net5.0-windows\Entidades.dll
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\TP1\Brito.Eduard.2D.TP1\MiCalculadora\bin\Debug\net5.0-windows\Entidades.pdb
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\TP1\Brito.Eduard.2D.TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.CopyComplete
+C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\TP1\Brito.Eduard.2D.TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.Properties.Resources.resources
