@@ -16,3 +16,4 @@ C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\TP2\TP-02\Entidades\bin\De
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\TP2\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\TP2\TP-02\Entidades\obj\Debug\Entidades.dll
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\TP2\TP-02\Entidades\obj\Debug\Entidades.pdb
+C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\TP2\TP-02\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
