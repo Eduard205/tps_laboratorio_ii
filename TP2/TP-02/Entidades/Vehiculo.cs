@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Entidades
 {
@@ -36,7 +33,7 @@ namespace Entidades
         /// <summary>
         /// ReadOnly: Retornará el tamaño
         /// </summary>
-        protected abstract ETamanio Tamanio { get;}
+        protected abstract ETamanio Tamanio { get; }
 
 
         /// <summary>
@@ -45,7 +42,7 @@ namespace Entidades
         /// <returns></returns>
         public virtual string Mostrar()
         {
-          
+
             return (string)this;
         }
 
@@ -80,9 +77,9 @@ namespace Entidades
         /// <returns></returns>
         public static bool operator !=(Vehiculo v1, Vehiculo v2)
         {
-            return (v1.chasis == v2.chasis);
+            return !(v1.chasis == v2.chasis);
         }
+  
 
-        
     }
 }
