@@ -22,7 +22,8 @@ namespace Entidades
         string chasis;
         ConsoleColor color;
 
-        protected Vehiculo(EMarca marca, string chasis, ConsoleColor color)
+
+        public Vehiculo(EMarca marca, string chasis, ConsoleColor color)
         {
             this.marca = marca;
             this.chasis = chasis;
@@ -46,7 +47,11 @@ namespace Entidades
             return (string)this;
         }
 
-
+        /// <summary>
+        /// Casteo explicito de un objeto de tipo vehiculo a string
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns>Retorna un string con los datos del vehiculo</returns>
         public static explicit operator string(Vehiculo p)
         {
             StringBuilder sb = new StringBuilder();
@@ -79,7 +84,7 @@ namespace Entidades
         {
             return !(v1.chasis == v2.chasis);
         }
-  
+
 
     }
 }

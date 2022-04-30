@@ -38,14 +38,18 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Retorna todos los datos del vehiculo tipo Sedan
+        /// </summary>
+        /// <returns>Retorna un string con los datos del vehiculo</returns>
         public override sealed string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine("SEDAN");
             sb.AppendLine(base.Mostrar());
-            sb.AppendLine($"TAMAÑO : " + this.Tamanio);
-            sb.AppendLine("TIPO : " + this.tipo);
+            sb.AppendLine($"TAMAÑO : {this.Tamanio}");
+            sb.AppendLine($"TIPO : {this.tipo}");
             sb.AppendLine("");
             sb.AppendLine("---------------------");
 

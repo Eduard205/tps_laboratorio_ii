@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Entidades
 {
@@ -11,8 +8,8 @@ namespace Entidades
     /// </summary>
     public sealed class Taller
     {
-       List<Vehiculo> vehiculos;
-       int espacioDisponible;
+        List<Vehiculo> vehiculos;
+        int espacioDisponible;
 
         public enum ETipo
         {
@@ -25,7 +22,7 @@ namespace Entidades
             this.vehiculos = new List<Vehiculo>();
         }
 
-        public Taller(int espacioDisponible): this()
+        public Taller(int espacioDisponible) : this()
         {
             this.espacioDisponible = espacioDisponible;
         }
@@ -38,7 +35,7 @@ namespace Entidades
         /// <returns></returns>
         public override string ToString()
         {
-            return this.Listar(this, ETipo.Todos);
+            return Taller.Listar(this, ETipo.Todos);
         }
         #endregion
 
@@ -51,13 +48,13 @@ namespace Entidades
         /// <param name="taller">Elemento a exponer</param>
         /// <param name="ETipo">Tipos de ítems de la lista a mostrar</param>
         /// <returns></returns>
-        public string Listar(Taller taller, ETipo tipo)
+        public static string Listar(Taller t, ETipo tipo)
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendFormat("Tenemos {0} lugares ocupados de un total de {1} disponibles", taller.vehiculos.Count, taller.espacioDisponible);
+            sb.AppendFormat("Tenemos {0} lugares ocupados de un total de {1} disponibles", t.vehiculos.Count, t.espacioDisponible);
             sb.AppendLine("");
-            foreach (Vehiculo v in taller.vehiculos)
+            foreach (Vehiculo v in t.vehiculos)
             {
                 switch (tipo)
                 {
@@ -87,21 +84,21 @@ namespace Entidades
         /// <param name="taller">Objeto donde se agregará el elemento</param>
         /// <param name="vehiculo">Objeto a agregar</param>
         /// <returns></returns>
-        public static Taller operator +(Taller taller, Vehiculo vehiculo)
+        public static Taller operator +(Taller t, Vehiculo vehiculo)
         {
 
-            if (taller.vehiculos.Count < taller.espacioDisponible)
+            if (t.vehiculos.Count < t.espacioDisponible)
             {
-                foreach (Vehiculo v in taller.vehiculos)
+                foreach (Vehiculo v in t.vehiculos)
                 {
                     if (v == vehiculo)
-                        return taller;
+                        return t;
                 }
 
-                taller.vehiculos.Add(vehiculo);
+                t.vehiculos.Add(vehiculo);
             }
 
-            return taller;
+            return t;
         }
         /// <summary>
         /// Quitará un elemento de la lista
@@ -109,19 +106,19 @@ namespace Entidades
         /// <param name="taller">Objeto donde se quitará el elemento</param>
         /// <param name="vehiculo">Objeto a quitar</param>
         /// <returns></returns>
-        public static Taller operator -(Taller taller, Vehiculo vehiculo)
+        public static Taller operator -(Taller t, Vehiculo vehiculo)
         {
-            foreach (Vehiculo v in taller.vehiculos)
+            foreach (Vehiculo v in t.vehiculos)
             {
                 if (v == vehiculo)
                 {
-                    taller.vehiculos.Remove(vehiculo);
- 
+                    t.vehiculos.Remove(vehiculo);
+
                     break;
                 }
             }
 
-            return taller;
+            return t;
         }
         #endregion
     }
