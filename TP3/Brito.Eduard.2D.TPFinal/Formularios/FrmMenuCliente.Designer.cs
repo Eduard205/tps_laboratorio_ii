@@ -109,7 +109,6 @@
             this.TxtDni.Name = "TxtDni";
             this.TxtDni.Size = new System.Drawing.Size(122, 23);
             this.TxtDni.TabIndex = 4;
-            this.TxtDni.TextChanged += new System.EventHandler(this.TxtDni_TextChanged);
             // 
             // TxtNombreCliente
             // 
@@ -118,7 +117,6 @@
             this.TxtNombreCliente.Name = "TxtNombreCliente";
             this.TxtNombreCliente.Size = new System.Drawing.Size(122, 23);
             this.TxtNombreCliente.TabIndex = 5;
-            this.TxtNombreCliente.TextChanged += new System.EventHandler(this.TxtNombreCliente_TextChanged);
             // 
             // TxtTelefono
             // 
@@ -127,7 +125,6 @@
             this.TxtTelefono.Name = "TxtTelefono";
             this.TxtTelefono.Size = new System.Drawing.Size(122, 23);
             this.TxtTelefono.TabIndex = 6;
-            this.TxtTelefono.TextChanged += new System.EventHandler(this.TxtTelefono_TextChanged);
             // 
             // TxtEdad
             // 
@@ -136,7 +133,6 @@
             this.TxtEdad.Name = "TxtEdad";
             this.TxtEdad.Size = new System.Drawing.Size(122, 23);
             this.TxtEdad.TabIndex = 7;
-            this.TxtEdad.TextChanged += new System.EventHandler(this.TxtEdad_TextChanged);
             // 
             // BtnAltaCliente
             // 
@@ -230,7 +226,6 @@
             this.DataGridAgregarCliente.RowTemplate.Height = 25;
             this.DataGridAgregarCliente.Size = new System.Drawing.Size(355, 186);
             this.DataGridAgregarCliente.TabIndex = 14;
-            this.DataGridAgregarCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridAgregarCliente_CellContentClick);
             // 
             // Column1
             // 
@@ -276,7 +271,6 @@
             this.TxtDniBajaCliente.Size = new System.Drawing.Size(193, 23);
             this.TxtDniBajaCliente.TabIndex = 15;
             this.TxtDniBajaCliente.Visible = false;
-            this.TxtDniBajaCliente.TextChanged += new System.EventHandler(this.TxtDniBajaCliente_TextChanged);
             // 
             // BtnConfirmarBaja
             // 
@@ -321,7 +315,6 @@
             this.Name = "FrmMenuCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mundo Play Shop > Menu Clientes";
-            this.Load += new System.EventHandler(this.FrmMenuCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridAgregarCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

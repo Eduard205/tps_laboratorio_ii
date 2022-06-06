@@ -85,9 +85,12 @@ namespace Biblioteca
         {
             foreach (Cliente item in lista)
             {
-                if (item == dni)
+                if (item is not null)
                 {
-                    return item;
+                    if (item == dni)
+                    {
+                        return item;
+                    }
                 }
             }
             return null;

@@ -18,28 +18,22 @@ namespace Formularios
         string nombreCliente;
         string telefono;
         int edad;
+        Cliente cliente;
         List<Cliente> listaClientes;
 
         public FrmMenuCliente()
         {
             InitializeComponent();
         }
-        private void FrmMenuCliente_Load(object sender, EventArgs e)
-        {
-            listaClientes = new List<Cliente>();
 
+        public FrmMenuCliente(List<Cliente> listaClientes): this()
+        {
+            this.listaClientes = listaClientes;
         }
 
-        private void TxtDni_TextChanged(object sender, EventArgs e)
+        public Cliente RetornarCliente
         {
-
-        }
-
-       
-
-        private void DataGridAgregarCliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            get { return cliente; }
         }
 
         private void BtnAgregarCliente_Click(object sender, EventArgs e)
@@ -83,21 +77,6 @@ namespace Formularios
             }
         }
 
-        private void TxtNombreCliente_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtTelefono_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtEdad_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnLimpiarCampos_Click(object sender, EventArgs e)
         {
             TxtDni.Clear();
@@ -137,23 +116,7 @@ namespace Formularios
         {
             this.TxtDniBajaCliente.Visible = true;
             this.BtnConfirmarBaja.Visible = true;
-            //listaClientes.Remove(Cliente.BuscarCliente(listaClientes, int.Parse(TxtDniBajaCliente.Text)));
-            //Cliente.BuscarCliente(listaClientes, 95645952);
-        }
-
-        private void TxtDniBajaCliente_TextChanged(object sender, EventArgs e)
-        {
-            //if (!string.IsNullOrEmpty(TxtDniBajaCliente.Text.Trim()))
-            //{
-            //    if (int.TryParse(TxtDniBajaCliente.Text, out dni) && int.Parse(TxtDniBajaCliente.Text) > 0)
-            //    {
-            //        MessageBox.Show($"Ingreso el DNI:", TxtDniBajaCliente.Text);
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Ingreso datos invalidos");
-            //    }
-            //}
+    
         }
 
         private void BtnConfirmarBaja_Click(object sender, EventArgs e)
@@ -167,10 +130,10 @@ namespace Formularios
                         Cliente clienteAux = new Cliente();
                         clienteAux = Cliente.BuscarCliente(listaClientes, int.Parse(TxtDniBajaCliente.Text));
 
-                        if (clienteAux != null)
+                        if (clienteAux != null && listaClientes.Remove(clienteAux) ==true)
                         {
-                            listaClientes.Remove(clienteAux);
                             MessageBox.Show($"Se dio de baja al cliente con el DNI: {TxtDniBajaCliente.Text}");
+                            this.DialogResult = DialogResult.OK;
                         }
                         else
                         {
@@ -187,23 +150,11 @@ namespace Formularios
                     MessageBox.Show("Debe ingresar el DNI a dar de baja");
                 }
             }
-            catch (Exception ex) { throw new Exception("Fallo la baja del cliente", ex); }
+            catch (Exception ex) 
+            { 
+                throw new Exception("Fallo la baja del cliente", ex); 
+            }
         }
 
-        //public string Mostrar()
-        //{
-        //    StringBuilder sb = new StringBuilder();
-
-        //    foreach (Cliente cliente in listaClientes)
-        //    {
-        //        sb.AppendLine($"DNI : { this.dni}");
-        //        sb.AppendLine($"NOMBRE CLIENTE: {this.nombreCliente}");
-        //        sb.AppendLine($"TELEFONO : {this.telefono}");
-        //        sb.AppendLine($"EDAD : {this.edad}");
-        //        sb.AppendLine("");
-        //        sb.AppendLine("---------------------");
-        //    }
-        //    return sb.ToString();
-        //}
     }
 }

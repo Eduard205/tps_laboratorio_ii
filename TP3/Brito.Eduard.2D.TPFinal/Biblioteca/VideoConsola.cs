@@ -32,11 +32,13 @@ namespace Biblioteca
             get { return nombreVideoConsola; }
             set { nombreVideoConsola = value; } 
         }
+
         public int Stock
         {
             get { return stock; }
             set { stock = value; }
         }
+
         public float Precio
         {
             get { return precio; }

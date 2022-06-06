@@ -24,19 +24,5 @@ namespace Biblioteca
             return listaProductos.ToString();
         }
 
-        //public bool ReponerStock(int cantidad)
-        //{
-        //    if (cantidad > 0)
-        //    {
-        //        ComprarStock = cantidad;
-        //        return true;
-        //    }
-        //    return false;
-        //}
-        //public int ComprarStock
-        //{
-        //    set => (Stock += value;
-        //}
-
     }
 }

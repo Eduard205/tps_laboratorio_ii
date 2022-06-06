@@ -36,7 +36,9 @@
             this.BtnReportes = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.DataGridListaClientes = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridListaClientes)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2Logo
@@ -105,6 +107,7 @@
             this.BtnSalir.TabIndex = 5;
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.UseVisualStyleBackColor = false;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // dateTimePicker1
             // 
@@ -118,12 +121,26 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(228, 23);
             this.dateTimePicker1.TabIndex = 6;
             // 
+            // DataGridListaClientes
+            // 
+            this.DataGridListaClientes.AllowUserToAddRows = false;
+            this.DataGridListaClientes.AllowUserToDeleteRows = false;
+            this.DataGridListaClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridListaClientes.Location = new System.Drawing.Point(277, 143);
+            this.DataGridListaClientes.Name = "DataGridListaClientes";
+            this.DataGridListaClientes.ReadOnly = true;
+            this.DataGridListaClientes.RowHeadersVisible = false;
+            this.DataGridListaClientes.RowTemplate.Height = 25;
+            this.DataGridListaClientes.Size = new System.Drawing.Size(405, 225);
+            this.DataGridListaClientes.TabIndex = 7;
+            // 
             // FrmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.DataGridListaClientes);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnReportes);
@@ -138,6 +155,7 @@
             this.Text = "Mundo Play Shop > Menu Principal";
             this.Load += new System.EventHandler(this.FrmMenuPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridListaClientes)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -151,5 +169,6 @@
         private System.Windows.Forms.Button BtnReportes;
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DataGridView DataGridListaClientes;
     }
 }

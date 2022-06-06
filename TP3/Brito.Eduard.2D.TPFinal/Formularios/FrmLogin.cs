@@ -59,10 +59,6 @@ namespace Formularios
             this.TxtContrasenia.Text = "MundoPlay123";
         }
 
-        private void FrmLogin_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 
