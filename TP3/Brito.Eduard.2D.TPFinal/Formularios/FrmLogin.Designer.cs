@@ -126,6 +126,7 @@
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mundo Play Shop > Login";
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

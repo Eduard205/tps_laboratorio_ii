@@ -82,6 +82,7 @@
             this.BtnClientes.TabIndex = 3;
             this.BtnClientes.Text = "Clientes";
             this.BtnClientes.UseVisualStyleBackColor = false;
+            this.BtnClientes.Click += new System.EventHandler(this.BtnClientes_Click);
             // 
             // BtnReportes
             // 

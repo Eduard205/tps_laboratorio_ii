@@ -15,15 +15,21 @@ namespace Biblioteca
 
         public VideoJuego(string nombreVideoJuego, ENombreVideoConsola nombreVideoConsola, float precio, int stock)
         {
-            this.nombreVideoJuego = nombreVideoJuego;
-            this.nombreVideoConsola = nombreVideoConsola;
-            this.precio = precio;
-            this.stock = stock;
+            this.NombreVideoJuego = nombreVideoJuego;
+            this.NombreVideoConsola = nombreVideoConsola;
+            this.Precio = precio;
+            this.Stock = stock;
         }
         public string NombreVideoJuego
         {
             get { return nombreVideoJuego; }
-            set { nombreVideoJuego = value; }
+            set 
+            {
+                if (!string.IsNullOrWhiteSpace(value))
+                {
+                    nombreVideoJuego = value;
+                }
+            }
         }
         public ENombreVideoConsola NombreVideoConsola
         {
@@ -38,7 +44,13 @@ namespace Biblioteca
         public float Precio
         {
             get { return precio; }
-            set { precio = value; }
+            set 
+            {
+                if (value > 0)
+                {
+                    precio = value;
+                }
+            }
         }
 
         public bool ReponerStock(int cantidad)

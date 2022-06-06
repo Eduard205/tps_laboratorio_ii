@@ -22,5 +22,10 @@ namespace Formularios
 
         }
 
+        private void BtnClientes_Click(object sender, EventArgs e)
+        {
+            FrmMenuCliente abmCliente = new FrmMenuCliente();
+            DialogResult result = abmCliente.ShowDialog();
+        }
     }
 }

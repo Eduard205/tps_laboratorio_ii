@@ -40,7 +40,13 @@ namespace Biblioteca
         public float Precio
         {
             get { return precio; }
-            set { precio = value; }
+            set 
+            {
+                if (value > 0)
+                {
+                    precio = value;
+                }
+            }
         }
 
         public bool ReponerStock(int cantidad)
