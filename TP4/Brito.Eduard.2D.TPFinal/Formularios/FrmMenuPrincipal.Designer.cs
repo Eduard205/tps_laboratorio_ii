@@ -37,6 +37,8 @@
             this.BtnSalir = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.DataGridListaClientes = new System.Windows.Forms.DataGridView();
+            this.BtnCargarArchivoClientes = new System.Windows.Forms.Button();
+            this.BtnGuardarArchivoClientes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2Logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridListaClientes)).BeginInit();
             this.SuspendLayout();
@@ -134,12 +136,38 @@
             this.DataGridListaClientes.Size = new System.Drawing.Size(405, 225);
             this.DataGridListaClientes.TabIndex = 7;
             // 
+            // BtnCargarArchivoClientes
+            // 
+            this.BtnCargarArchivoClientes.BackColor = System.Drawing.Color.Lavender;
+            this.BtnCargarArchivoClientes.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnCargarArchivoClientes.Location = new System.Drawing.Point(277, 374);
+            this.BtnCargarArchivoClientes.Name = "BtnCargarArchivoClientes";
+            this.BtnCargarArchivoClientes.Size = new System.Drawing.Size(186, 33);
+            this.BtnCargarArchivoClientes.TabIndex = 8;
+            this.BtnCargarArchivoClientes.Text = "Cargar Archivo de Clientes";
+            this.BtnCargarArchivoClientes.UseVisualStyleBackColor = false;
+            this.BtnCargarArchivoClientes.Click += new System.EventHandler(this.BtnCargarArchivoClientes_Click);
+            // 
+            // BtnGuardarArchivoClientes
+            // 
+            this.BtnGuardarArchivoClientes.BackColor = System.Drawing.Color.PaleGreen;
+            this.BtnGuardarArchivoClientes.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnGuardarArchivoClientes.Location = new System.Drawing.Point(277, 413);
+            this.BtnGuardarArchivoClientes.Name = "BtnGuardarArchivoClientes";
+            this.BtnGuardarArchivoClientes.Size = new System.Drawing.Size(186, 33);
+            this.BtnGuardarArchivoClientes.TabIndex = 9;
+            this.BtnGuardarArchivoClientes.Text = "Guardar Archivo de Clientes";
+            this.BtnGuardarArchivoClientes.UseVisualStyleBackColor = false;
+            this.BtnGuardarArchivoClientes.Click += new System.EventHandler(this.BtnGuardarArchivoClientes_Click);
+            // 
             // FrmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnGuardarArchivoClientes);
+            this.Controls.Add(this.BtnCargarArchivoClientes);
             this.Controls.Add(this.DataGridListaClientes);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.BtnSalir);
@@ -170,5 +198,7 @@
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridView DataGridListaClientes;
+        private System.Windows.Forms.Button BtnCargarArchivoClientes;
+        private System.Windows.Forms.Button BtnGuardarArchivoClientes;
     }
 }

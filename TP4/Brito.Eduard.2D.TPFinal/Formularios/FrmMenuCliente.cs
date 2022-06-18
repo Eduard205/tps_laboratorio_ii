@@ -105,6 +105,7 @@ namespace Formularios
                     listaClientes.Add(new Cliente(dni, nombreCliente, telefono, edad, false));
                     MessageBox.Show("Se dio de alta al cliente");
                     this.DialogResult = DialogResult.OK;
+
                 }
                 else
                 {

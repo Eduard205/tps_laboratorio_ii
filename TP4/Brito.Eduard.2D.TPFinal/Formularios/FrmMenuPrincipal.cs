@@ -18,31 +18,7 @@ namespace Formularios
         public FrmMenuPrincipal()
         {
             InitializeComponent();
-
-            listaClientes = new List<Cliente>()
-            {
-                new Cliente()
-                {
-                    Dni = 34456789,
-                    NombreCliente= "Juan",
-                    Telefono= "1145687852",
-                    Edad = 16
-                },
-                 new Cliente()
-                {
-                    Dni = 28455781,
-                    NombreCliente= "Cecilia",
-                    Telefono= "1125787951",
-                    Edad = 25
-                },
-                  new Cliente()
-                {
-                    Dni = 30452754,
-                    NombreCliente= "Leandro",
-                    Telefono= "1165327889",
-                    Edad = 20
-                },
-            };
+            listaClientes = new List<Cliente>();
         }
 
         private void FrmMenuPrincipal_Load(object sender, EventArgs e)
@@ -76,6 +52,18 @@ namespace Formularios
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void BtnCargarArchivoClientes_Click(object sender, EventArgs e)
+        {
+            listaClientes = ClaseSerializadora<Cliente>.Leer();
+            ActualizarDatos();
+        }
+
+        private void BtnGuardarArchivoClientes_Click(object sender, EventArgs e)
+        {
+            ClaseSerializadora<Cliente>.Escribir(listaClientes);
+            MessageBox.Show("Se Guardó la lista de clientes");
         }
     }
 }
