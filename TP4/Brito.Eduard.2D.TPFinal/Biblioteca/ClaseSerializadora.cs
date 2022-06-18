@@ -13,8 +13,7 @@ namespace Biblioteca
         static string ruta;
         static ClaseSerializadora()
         {
-            ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            ruta += @"\Archivo-Serializacion";
+            ruta = AppDomain.CurrentDomain.BaseDirectory;
         }
 
         /// <summary>
@@ -24,7 +23,7 @@ namespace Biblioteca
         /// <exception cref="Exception"></exception>
         public static void Escribir(List<T> lista) 
         {
-            string rutaCompleta = ruta + @"\Serializacion_ListaClientes_Xml";
+            string rutaCompleta = ruta + @"\Serializacion_Lista" + ".xml";
 
             try
             {
@@ -52,7 +51,7 @@ namespace Biblioteca
         /// <exception cref="Exception"></exception>
         public static List<T> Leer()
         {
-            string rutaCompleta = ruta + @"\Serializacion_ListaClientes_Xml";
+            string rutaCompleta = ruta + @"\Serializacion_Lista.xml";
 
             List<T> listaAux = null;
 
@@ -63,16 +62,20 @@ namespace Biblioteca
                     Directory.CreateDirectory(ruta);
                 }
 
-                using (StreamReader sr = new StreamReader(rutaCompleta))
+                if (File.Exists(rutaCompleta))
                 {
-                    XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<T>));
-                    listaAux = (List<T>)xmlSerializer.Deserialize(sr);
+                    using (StreamReader sr = new StreamReader(rutaCompleta))
+                    {
+                        XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<T>));
+                        listaAux = (List<T>)xmlSerializer.Deserialize(sr);
+                    }
                 }
+
                 return listaAux;
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error en el archivo {rutaCompleta}", ex);
+               throw new Exception($"Error en el archivo: {rutaCompleta}", ex);
             }
         }
     }

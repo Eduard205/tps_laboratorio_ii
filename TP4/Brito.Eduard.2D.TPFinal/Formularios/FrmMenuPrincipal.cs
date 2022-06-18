@@ -57,13 +57,22 @@ namespace Formularios
         private void BtnCargarArchivoClientes_Click(object sender, EventArgs e)
         {
             listaClientes = ClaseSerializadora<Cliente>.Leer();
-            ActualizarDatos();
+
+            if(listaClientes is not null)
+            {
+                ActualizarDatos();
+                MessageBox.Show("Se cargo la lista de clientes");
+            }
+            else
+            {
+                MessageBox.Show("Error en el archivo, no se cargo la lista de clientes");
+            }
         }
 
         private void BtnGuardarArchivoClientes_Click(object sender, EventArgs e)
         {
             ClaseSerializadora<Cliente>.Escribir(listaClientes);
-            MessageBox.Show("Se Guardó la lista de clientes");
+            MessageBox.Show("Se guardó la lista de clientes");
         }
     }
 }
