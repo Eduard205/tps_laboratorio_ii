@@ -315,6 +315,7 @@
             this.Name = "FrmMenuCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mundo Play Shop > Menu Clientes";
+            this.Load += new System.EventHandler(this.FrmMenuCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridAgregarCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

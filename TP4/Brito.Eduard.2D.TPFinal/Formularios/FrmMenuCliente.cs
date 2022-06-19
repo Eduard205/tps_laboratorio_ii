@@ -161,5 +161,9 @@ namespace Formularios
             }
         }
 
+        private void FrmMenuCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

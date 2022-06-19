@@ -19,11 +19,21 @@ namespace Formularios
         {
             InitializeComponent();
             listaClientes = new List<Cliente>();
+            
         }
 
         private void FrmMenuPrincipal_Load(object sender, EventArgs e)
         {
-            ActualizarDatos();
+            listaClientes = ClaseSerializadora<Cliente>.Leer();
+
+            if (listaClientes is not null)
+            {
+                ActualizarDatos();
+            }
+            else
+            {
+                MessageBox.Show("Error en el archivo, no se cargo la lista de clientes");
+            }
         }
 
         private void ActualizarDatos()
@@ -52,21 +62,6 @@ namespace Formularios
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void BtnCargarArchivoClientes_Click(object sender, EventArgs e)
-        {
-            listaClientes = ClaseSerializadora<Cliente>.Leer();
-
-            if(listaClientes is not null)
-            {
-                ActualizarDatos();
-                MessageBox.Show("Se cargo la lista de clientes");
-            }
-            else
-            {
-                MessageBox.Show("Error en el archivo, no se cargo la lista de clientes");
-            }
         }
 
         private void BtnGuardarArchivoClientes_Click(object sender, EventArgs e)
