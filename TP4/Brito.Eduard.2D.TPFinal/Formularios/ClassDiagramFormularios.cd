@@ -1,41 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Formularios.Properties.Resources">
-    <Position X="6.5" Y="0.5" Width="1.75" />
+  <Class Name="Formularios.FrmMenuPrincipal">
+    <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAABAAAABUAAAEQAAAAAAAAAAAAAAAIA=</HashCode>
+      <HashCode>ABgAEAAAIiAAAAASBACAARACQAIABBAAAAAAAgAAAAA=</HashCode>
+      <FileName>FrmMenuPrincipal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.FrmMenuCliente">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAABMAABBbAAAxAgAwCYAAgKkAE4BAAAAgIQAAAAAAc=</HashCode>
+      <FileName>FrmMenuCliente.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Formularios.FrmLogin">
-    <Position X="0.5" Y="0.5" Width="1.75" />
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAIBCAAAEAAAACAAAACAAAAAIAAAAAJAAAAgAA=</HashCode>
       <FileName>FrmLogin.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Formularios.FrmMenuCliente">
-    <Position X="2.5" Y="0.5" Width="1.75" />
-    <Compartments>
-      <Compartment Name="Methods" Collapsed="true" />
-    </Compartments>
+  <Class Name="Formularios.FrmInventario">
+    <Position X="6.5" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>BAABMAAFBbAAAxAgAwCYAAgKgAE4BAAAAgIQAAAAAAc=</HashCode>
+      <HashCode>AAAAAAAABCAAAAEgABCAAABCAACAAAAEAABAABAAAAA=</HashCode>
+      <FileName>FrmInventario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Delegate Name="Formularios.DelegadoMostrar" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>FrmMenuCliente.cs</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="Formularios.FrmMenuPrincipal">
-    <Position X="4.5" Y="0.5" Width="1.75" />
+  </Delegate>
+  <Delegate Name="Formularios.DelegadoSinParametros" Collapsed="true">
+    <Position X="6.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAAEAAAAiAAAAASBACAAQACQAIABBAAAAAAAgAAAAA=</HashCode>
-      <FileName>FrmMenuPrincipal.cs</FileName>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FrmInventario.cs</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="Formularios.Program">
-    <Position X="0.5" Y="4.5" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
-    </TypeIdentifier>
-  </Class>
+  </Delegate>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

@@ -48,7 +48,7 @@ namespace Biblioteca
         /// deserializa un objeto de tipo Xml
         /// </summary>
         /// <returns>Retorna el objeto deserializado</returns>
-        /// <exception cref="Exception"></exception>
+        /// <exception cref="Exception"></exception> 
         public static List<T> Leer()
         {
             string rutaCompleta = ruta + @"\Serializacion_Lista.xml";

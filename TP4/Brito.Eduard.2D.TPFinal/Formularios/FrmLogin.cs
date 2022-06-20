@@ -32,6 +32,7 @@ namespace Formularios
 
                     if (usuarioLogueado is not null)
                     {
+                        MessageBox.Show($"Bienvenido a Mundo Play Shop {usuarioLogueado.Nombre}");
                         FrmMenuPrincipal menuPrincipal = new FrmMenuPrincipal();
                         menuPrincipal.Show();
                         this.Hide();

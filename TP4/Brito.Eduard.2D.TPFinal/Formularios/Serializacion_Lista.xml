@@ -36,7 +36,4 @@
     <Telefono>1145789645</Telefono>
     <Edad>32</Edad>
   </Cliente>
-  <Cliente xsi:nil="true" />
-  <Cliente xsi:nil="true" />
-  <Cliente xsi:nil="true" />
 </ArrayOfCliente>

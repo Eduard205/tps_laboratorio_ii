@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenuPrincipal));
             this.pictureBox2Logo = new System.Windows.Forms.PictureBox();
             this.BtnVender = new System.Windows.Forms.Button();
             this.BtnInventario = new System.Windows.Forms.Button();
             this.BtnClientes = new System.Windows.Forms.Button();
-            this.BtnReportes = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.DataGridListaClientes = new System.Windows.Forms.DataGridView();
@@ -74,6 +74,7 @@
             this.BtnInventario.TabIndex = 2;
             this.BtnInventario.Text = "Inventario";
             this.BtnInventario.UseVisualStyleBackColor = false;
+            this.BtnInventario.Click += new System.EventHandler(this.BtnInventario_Click);
             // 
             // BtnClientes
             // 
@@ -87,22 +88,11 @@
             this.BtnClientes.UseVisualStyleBackColor = false;
             this.BtnClientes.Click += new System.EventHandler(this.BtnClientes_Click);
             // 
-            // BtnReportes
-            // 
-            this.BtnReportes.BackColor = System.Drawing.Color.DarkGray;
-            this.BtnReportes.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnReportes.Location = new System.Drawing.Point(54, 308);
-            this.BtnReportes.Name = "BtnReportes";
-            this.BtnReportes.Size = new System.Drawing.Size(116, 33);
-            this.BtnReportes.TabIndex = 4;
-            this.BtnReportes.Text = "Reportes";
-            this.BtnReportes.UseVisualStyleBackColor = false;
-            // 
             // BtnSalir
             // 
             this.BtnSalir.BackColor = System.Drawing.Color.OrangeRed;
             this.BtnSalir.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnSalir.Location = new System.Drawing.Point(54, 362);
+            this.BtnSalir.Location = new System.Drawing.Point(54, 304);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(116, 33);
             this.BtnSalir.TabIndex = 5;
@@ -126,7 +116,16 @@
             // 
             this.DataGridListaClientes.AllowUserToAddRows = false;
             this.DataGridListaClientes.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridListaClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DataGridListaClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridListaClientes.EnableHeadersVisualStyles = false;
             this.DataGridListaClientes.Location = new System.Drawing.Point(277, 143);
             this.DataGridListaClientes.Name = "DataGridListaClientes";
             this.DataGridListaClientes.ReadOnly = true;
@@ -157,7 +156,6 @@
             this.Controls.Add(this.DataGridListaClientes);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.BtnSalir);
-            this.Controls.Add(this.BtnReportes);
             this.Controls.Add(this.BtnClientes);
             this.Controls.Add(this.BtnInventario);
             this.Controls.Add(this.BtnVender);
@@ -180,7 +178,6 @@
         private System.Windows.Forms.Button BtnVender;
         private System.Windows.Forms.Button BtnInventario;
         private System.Windows.Forms.Button BtnClientes;
-        private System.Windows.Forms.Button BtnReportes;
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridView DataGridListaClientes;

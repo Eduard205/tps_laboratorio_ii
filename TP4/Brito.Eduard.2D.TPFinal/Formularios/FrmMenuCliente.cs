@@ -12,6 +12,7 @@ using Biblioteca;
 
 namespace Formularios
 {
+    public delegate void DelegadoMostrar();
     public partial class FrmMenuCliente : Form
     {
         int dni;
@@ -26,7 +27,7 @@ namespace Formularios
             InitializeComponent();
         }
 
-        public FrmMenuCliente(List<Cliente> listaClientes): this()
+        public FrmMenuCliente(List<Cliente> listaClientes) : this()
         {
             this.listaClientes = listaClientes;
         }
@@ -68,7 +69,7 @@ namespace Formularios
                 }
                 else
                 {
-                    MessageBox.Show("Debe completar TODOS los campos"); 
+                    MessageBox.Show("Debe completar TODOS los campos");
                 }
             }
             catch (Exception ex)
@@ -93,7 +94,7 @@ namespace Formularios
 
         private void BtnVolverMenuPrincipal_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.Cancel; 
+            this.DialogResult = DialogResult.Cancel;
         }
 
         private void BtnAltaCliente_Click(object sender, EventArgs e)
@@ -103,9 +104,8 @@ namespace Formularios
                 if (listaClientes is not null && nombreCliente is not null && telefono is not null)
                 {
                     listaClientes.Add(new Cliente(dni, nombreCliente, telefono, edad, false));
-                    MessageBox.Show("Se dio de alta al cliente");
+                    ActualizarMensaje(nombreCliente, () => MessageBox.Show($"Alta efectuada correctamente"));
                     this.DialogResult = DialogResult.OK;
-
                 }
                 else
                 {
@@ -135,7 +135,7 @@ namespace Formularios
                         Cliente clienteAux = new Cliente();
                         clienteAux = Cliente.BuscarCliente(listaClientes, int.Parse(TxtDniBajaCliente.Text));
 
-                        if (clienteAux != null && listaClientes.Remove(clienteAux) ==true)
+                        if (clienteAux != null && listaClientes.Remove(clienteAux) == true)
                         {
                             MessageBox.Show($"Se dio de baja al cliente con el DNI: {TxtDniBajaCliente.Text}");
                             this.DialogResult = DialogResult.OK;
@@ -155,15 +155,17 @@ namespace Formularios
                     MessageBox.Show("Debe ingresar el DNI a dar de baja");
                 }
             }
-            catch (Exception ex) 
-            { 
-                throw new Exception("Fallo la baja del cliente", ex); 
+            catch (Exception ex)
+            {
+                throw new Exception("Fallo la baja del cliente", ex);
             }
         }
 
-        private void FrmMenuCliente_Load(object sender, EventArgs e)
+        public void ActualizarMensaje(string nombre, DelegadoMostrar delegadoMostrar)
         {
+            delegadoMostrar();
+            MessageBox.Show($"Se dio de alta al cliente: {nombre}");
+        } 
 
-        }
     }
 }

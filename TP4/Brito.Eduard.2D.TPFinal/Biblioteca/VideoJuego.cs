@@ -6,6 +6,14 @@ using System.Threading.Tasks;
 
 namespace Biblioteca
 {
+    public enum ENombreVideoConsola
+    {
+        PS4,
+        PS5,
+        NintendoSwitch,
+        Xbox
+    }
+
     public class VideoJuego: IReponerStock, IVenderStock
     {
         string nombreVideoJuego;
@@ -104,6 +112,7 @@ namespace Biblioteca
                 return false;
             }
         }
+        
         
     }
 }

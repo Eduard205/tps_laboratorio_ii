@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInventario));
             this.DataGridListaJuegos = new System.Windows.Forms.DataGridView();
             this.LabInventario = new System.Windows.Forms.Label();
+            this.BtnVolverMenuPrincipal = new System.Windows.Forms.Button();
+            this.BtnImportarBdVideoJuegos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridListaJuegos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,7 +63,6 @@
             this.DataGridListaJuegos.RowTemplate.Height = 25;
             this.DataGridListaJuegos.Size = new System.Drawing.Size(610, 219);
             this.DataGridListaJuegos.TabIndex = 8;
-            this.DataGridListaJuegos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridListaJuegos_CellContentClick);
             // 
             // LabInventario
             // 
@@ -75,12 +76,38 @@
             this.LabInventario.TabIndex = 9;
             this.LabInventario.Text = "INVENTARIO";
             // 
+            // BtnVolverMenuPrincipal
+            // 
+            this.BtnVolverMenuPrincipal.BackColor = System.Drawing.Color.Tomato;
+            this.BtnVolverMenuPrincipal.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnVolverMenuPrincipal.Location = new System.Drawing.Point(632, 24);
+            this.BtnVolverMenuPrincipal.Name = "BtnVolverMenuPrincipal";
+            this.BtnVolverMenuPrincipal.Size = new System.Drawing.Size(146, 29);
+            this.BtnVolverMenuPrincipal.TabIndex = 12;
+            this.BtnVolverMenuPrincipal.Text = "Volver al Menu Principal";
+            this.BtnVolverMenuPrincipal.UseVisualStyleBackColor = false;
+            this.BtnVolverMenuPrincipal.Click += new System.EventHandler(this.BtnVolverMenuPrincipal_Click);
+            // 
+            // BtnImportarBdVideoJuegos
+            // 
+            this.BtnImportarBdVideoJuegos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BtnImportarBdVideoJuegos.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnImportarBdVideoJuegos.Location = new System.Drawing.Point(94, 331);
+            this.BtnImportarBdVideoJuegos.Name = "BtnImportarBdVideoJuegos";
+            this.BtnImportarBdVideoJuegos.Size = new System.Drawing.Size(236, 33);
+            this.BtnImportarBdVideoJuegos.TabIndex = 13;
+            this.BtnImportarBdVideoJuegos.Text = "Importar Inventario de VideoJuegos";
+            this.BtnImportarBdVideoJuegos.UseVisualStyleBackColor = false;
+            this.BtnImportarBdVideoJuegos.Click += new System.EventHandler(this.BtnImportarBdVideoJuegos_Click);
+            // 
             // FrmInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnImportarBdVideoJuegos);
+            this.Controls.Add(this.BtnVolverMenuPrincipal);
             this.Controls.Add(this.LabInventario);
             this.Controls.Add(this.DataGridListaJuegos);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -88,7 +115,6 @@
             this.Name = "FrmInventario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mundo Play Shop > Inventario";
-            this.Load += new System.EventHandler(this.FrmInventario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridListaJuegos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -99,5 +125,7 @@
 
         private System.Windows.Forms.DataGridView DataGridListaJuegos;
         private System.Windows.Forms.Label LabInventario;
+        private System.Windows.Forms.Button BtnVolverMenuPrincipal;
+        private System.Windows.Forms.Button BtnImportarBdVideoJuegos;
     }
 }

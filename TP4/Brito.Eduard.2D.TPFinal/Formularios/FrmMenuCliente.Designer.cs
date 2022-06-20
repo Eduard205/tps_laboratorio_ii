@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenuCliente));
             this.LabDNI = new System.Windows.Forms.Label();
             this.LabNombreCliente = new System.Windows.Forms.Label();
@@ -38,7 +39,6 @@
             this.TxtTelefono = new System.Windows.Forms.TextBox();
             this.TxtEdad = new System.Windows.Forms.TextBox();
             this.BtnAltaCliente = new System.Windows.Forms.Button();
-            this.BtnModificarCliente = new System.Windows.Forms.Button();
             this.BtnBajaCliente = new System.Windows.Forms.Button();
             this.BtnVolverMenuPrincipal = new System.Windows.Forms.Button();
             this.BtnLimpiarCampos = new System.Windows.Forms.Button();
@@ -138,7 +138,7 @@
             // 
             this.BtnAltaCliente.BackColor = System.Drawing.Color.LimeGreen;
             this.BtnAltaCliente.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnAltaCliente.Location = new System.Drawing.Point(17, 228);
+            this.BtnAltaCliente.Location = new System.Drawing.Point(33, 277);
             this.BtnAltaCliente.Name = "BtnAltaCliente";
             this.BtnAltaCliente.Size = new System.Drawing.Size(89, 29);
             this.BtnAltaCliente.TabIndex = 8;
@@ -146,22 +146,11 @@
             this.BtnAltaCliente.UseVisualStyleBackColor = false;
             this.BtnAltaCliente.Click += new System.EventHandler(this.BtnAltaCliente_Click);
             // 
-            // BtnModificarCliente
-            // 
-            this.BtnModificarCliente.BackColor = System.Drawing.Color.Yellow;
-            this.BtnModificarCliente.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnModificarCliente.Location = new System.Drawing.Point(17, 274);
-            this.BtnModificarCliente.Name = "BtnModificarCliente";
-            this.BtnModificarCliente.Size = new System.Drawing.Size(109, 29);
-            this.BtnModificarCliente.TabIndex = 9;
-            this.BtnModificarCliente.Text = "Modificar Cliente";
-            this.BtnModificarCliente.UseVisualStyleBackColor = false;
-            // 
             // BtnBajaCliente
             // 
             this.BtnBajaCliente.BackColor = System.Drawing.Color.Red;
             this.BtnBajaCliente.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnBajaCliente.Location = new System.Drawing.Point(17, 321);
+            this.BtnBajaCliente.Location = new System.Drawing.Point(176, 277);
             this.BtnBajaCliente.Name = "BtnBajaCliente";
             this.BtnBajaCliente.Size = new System.Drawing.Size(89, 29);
             this.BtnBajaCliente.TabIndex = 10;
@@ -173,7 +162,7 @@
             // 
             this.BtnVolverMenuPrincipal.BackColor = System.Drawing.Color.Tomato;
             this.BtnVolverMenuPrincipal.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnVolverMenuPrincipal.Location = new System.Drawing.Point(17, 365);
+            this.BtnVolverMenuPrincipal.Location = new System.Drawing.Point(642, 394);
             this.BtnVolverMenuPrincipal.Name = "BtnVolverMenuPrincipal";
             this.BtnVolverMenuPrincipal.Size = new System.Drawing.Size(146, 29);
             this.BtnVolverMenuPrincipal.TabIndex = 11;
@@ -212,19 +201,28 @@
             this.DataGridAgregarCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.DataGridAgregarCliente.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DataGridAgregarCliente.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridAgregarCliente.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DataGridAgregarCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridAgregarCliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4});
+            this.DataGridAgregarCliente.EnableHeadersVisualStyles = false;
             this.DataGridAgregarCliente.Location = new System.Drawing.Point(335, 12);
             this.DataGridAgregarCliente.Name = "DataGridAgregarCliente";
             this.DataGridAgregarCliente.ReadOnly = true;
             this.DataGridAgregarCliente.RowHeadersVisible = false;
             this.DataGridAgregarCliente.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.DataGridAgregarCliente.RowTemplate.Height = 25;
-            this.DataGridAgregarCliente.Size = new System.Drawing.Size(355, 186);
+            this.DataGridAgregarCliente.Size = new System.Drawing.Size(375, 186);
             this.DataGridAgregarCliente.TabIndex = 14;
             // 
             // Column1
@@ -248,7 +246,7 @@
             this.Column3.HeaderText = "TELEFONO";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 89;
+            this.Column3.Width = 88;
             // 
             // Column4
             // 
@@ -265,7 +263,7 @@
             // TxtDniBajaCliente
             // 
             this.TxtDniBajaCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtDniBajaCliente.Location = new System.Drawing.Point(160, 321);
+            this.TxtDniBajaCliente.Location = new System.Drawing.Point(271, 280);
             this.TxtDniBajaCliente.Name = "TxtDniBajaCliente";
             this.TxtDniBajaCliente.PlaceholderText = "Ingrese DNI del cliente a dar de baja";
             this.TxtDniBajaCliente.Size = new System.Drawing.Size(193, 23);
@@ -276,9 +274,9 @@
             // 
             this.BtnConfirmarBaja.BackColor = System.Drawing.Color.Plum;
             this.BtnConfirmarBaja.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnConfirmarBaja.Location = new System.Drawing.Point(359, 321);
+            this.BtnConfirmarBaja.Location = new System.Drawing.Point(470, 280);
             this.BtnConfirmarBaja.Name = "BtnConfirmarBaja";
-            this.BtnConfirmarBaja.Size = new System.Drawing.Size(115, 23);
+            this.BtnConfirmarBaja.Size = new System.Drawing.Size(115, 24);
             this.BtnConfirmarBaja.TabIndex = 16;
             this.BtnConfirmarBaja.Text = "Confirmar Baja";
             this.BtnConfirmarBaja.UseVisualStyleBackColor = false;
@@ -298,7 +296,6 @@
             this.Controls.Add(this.BtnLimpiarCampos);
             this.Controls.Add(this.BtnVolverMenuPrincipal);
             this.Controls.Add(this.BtnBajaCliente);
-            this.Controls.Add(this.BtnModificarCliente);
             this.Controls.Add(this.BtnAltaCliente);
             this.Controls.Add(this.TxtEdad);
             this.Controls.Add(this.TxtTelefono);
@@ -315,7 +312,6 @@
             this.Name = "FrmMenuCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mundo Play Shop > Menu Clientes";
-            this.Load += new System.EventHandler(this.FrmMenuCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridAgregarCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -333,7 +329,6 @@
         private System.Windows.Forms.TextBox TxtTelefono;
         private System.Windows.Forms.TextBox TxtEdad;
         private System.Windows.Forms.Button BtnAltaCliente;
-        private System.Windows.Forms.Button BtnModificarCliente;
         private System.Windows.Forms.Button BtnBajaCliente;
         private System.Windows.Forms.Button BtnVolverMenuPrincipal;
         private System.Windows.Forms.Button BtnLimpiarCampos;

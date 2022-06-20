@@ -69,5 +69,11 @@ namespace Formularios
             ClaseSerializadora<Cliente>.Escribir(listaClientes);
             MessageBox.Show("Se guardó la lista de clientes");
         }
+
+        private void BtnInventario_Click(object sender, EventArgs e)
+        {
+            FrmInventario frmInventario = new FrmInventario();
+            DialogResult result = frmInventario.ShowDialog();
+        }
     }
 }

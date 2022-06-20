@@ -22,6 +22,11 @@ namespace Biblioteca
             command.Connection = connection;
         }
 
+        /// <summary>
+        /// Lee la base de datos de VideoJuegos
+        /// </summary>
+        /// <returns>Retorna una lista con la base de datos de VideoJuegos</returns>
+        /// <exception cref="Exception"></exception>
         public static List<VideoJuego> Leer()
         {
             List<VideoJuego> lista = new List<VideoJuego>();
@@ -50,9 +55,16 @@ namespace Biblioteca
             {
                 connection.Close();
             }
-           
         }
 
+        /// <summary>
+        /// Guarda VideoJuegos en la base de datos (LISTA_VIDEOJUEGOS)
+        /// </summary>
+        /// <param name="nombreVideoJuego"></param>
+        /// <param name="nombreVideoConsola"></param>
+        /// <param name="precio"></param>
+        /// <param name="stock"></param>
+        /// <exception cref="Exception"></exception>
         public static void Guardar(string nombreVideoJuego, ENombreVideoConsola nombreVideoConsola, float precio, int stock)
         {
             try
