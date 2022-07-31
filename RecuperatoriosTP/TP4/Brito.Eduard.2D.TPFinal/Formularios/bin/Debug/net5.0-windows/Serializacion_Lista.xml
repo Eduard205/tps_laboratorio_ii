@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCliente xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Cliente>
+    <Dni>34456789</Dni>
+    <NombreCliente>Juan</NombreCliente>
+    <Telefono>1145687852</Telefono>
+    <Edad>16</Edad>
+  </Cliente>
+  <Cliente>
+    <Dni>28455781</Dni>
+    <NombreCliente>Cecilia</NombreCliente>
+    <Telefono>1125787951</Telefono>
+    <Edad>25</Edad>
+  </Cliente>
+  <Cliente>
+    <Dni>30452754</Dni>
+    <NombreCliente>Leandro</NombreCliente>
+    <Telefono>1165327889</Telefono>
+    <Edad>20</Edad>
+  </Cliente>
+  <Cliente>
+    <Dni>14568789</Dni>
+    <NombreCliente>PEPE</NombreCliente>
+    <Telefono>1145234596</Telefono>
+    <Edad>16</Edad>
+  </Cliente>
+  <Cliente>
+    <Dni>24341589</Dni>
+    <NombreCliente>Matias</NombreCliente>
+    <Telefono>1145897896</Telefono>
+    <Edad>22</Edad>
+  </Cliente>
+  <Cliente>
+    <Dni>27856896</Dni>
+    <NombreCliente>Juanse</NombreCliente>
+    <Telefono>1145789645</Telefono>
+    <Edad>32</Edad>
+  </Cliente>
+</ArrayOfCliente>
