@@ -102,5 +102,11 @@ namespace Formularios
                 labFechaReloj.Text = DateTime.Now.ToString("dd/MM/yyy HH:mm:ss");
             }
         }
+
+        private void BtnVender_Click(object sender, EventArgs e)
+        {
+            FrmMenuVender frmMenuVender = new FrmMenuVender(listaClientes);
+            DialogResult result = frmMenuVender.ShowDialog();
+        }
     }
 }

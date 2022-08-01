@@ -34,7 +34,9 @@
             this.LabInventario = new System.Windows.Forms.Label();
             this.BtnVolverMenuPrincipal = new System.Windows.Forms.Button();
             this.BtnImportarBdVideoJuegos = new System.Windows.Forms.Button();
+            this.pictureBox2Logo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridListaJuegos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // DataGridListaJuegos
@@ -100,12 +102,24 @@
             this.BtnImportarBdVideoJuegos.UseVisualStyleBackColor = false;
             this.BtnImportarBdVideoJuegos.Click += new System.EventHandler(this.BtnImportarBdVideoJuegos_Click);
             // 
+            // pictureBox2Logo
+            // 
+            this.pictureBox2Logo.BackColor = System.Drawing.Color.AliceBlue;
+            this.pictureBox2Logo.Image = global::Formularios.Properties.Resources.Logo_PNG_2;
+            this.pictureBox2Logo.Location = new System.Drawing.Point(3, 6);
+            this.pictureBox2Logo.Name = "pictureBox2Logo";
+            this.pictureBox2Logo.Size = new System.Drawing.Size(151, 74);
+            this.pictureBox2Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2Logo.TabIndex = 22;
+            this.pictureBox2Logo.TabStop = false;
+            // 
             // FrmInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox2Logo);
             this.Controls.Add(this.BtnImportarBdVideoJuegos);
             this.Controls.Add(this.BtnVolverMenuPrincipal);
             this.Controls.Add(this.LabInventario);
@@ -116,6 +130,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mundo Play Shop > Inventario";
             ((System.ComponentModel.ISupportInitialize)(this.DataGridListaJuegos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2Logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -127,5 +142,6 @@
         private System.Windows.Forms.Label LabInventario;
         private System.Windows.Forms.Button BtnVolverMenuPrincipal;
         private System.Windows.Forms.Button BtnImportarBdVideoJuegos;
+        private System.Windows.Forms.PictureBox pictureBox2Logo;
     }
 }

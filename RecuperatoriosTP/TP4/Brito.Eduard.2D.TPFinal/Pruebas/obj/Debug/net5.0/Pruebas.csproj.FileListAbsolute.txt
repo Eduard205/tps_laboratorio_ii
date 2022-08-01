@@ -209,13 +209,13 @@ C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\TP4\Brito.Eduard.2D.TPFina
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\TP4\Brito.Eduard.2D.TPFinal\Pruebas\obj\Debug\net5.0\Pruebas.genruntimeconfig.cache
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\TP4\Brito.Eduard.2D.TPFinal\Pruebas\obj\Debug\net5.0\ref\Pruebas.dll
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito.Eduard.2D.TPFinal\Pruebas\bin\Debug\net5.0\CoverletSourceRootsMapping
-C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito.Eduard.2D.TPFinal\Pruebas\bin\Debug\net5.0\testhost.exe
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito.Eduard.2D.TPFinal\Pruebas\bin\Debug\net5.0\testhost.dll
+C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito.Eduard.2D.TPFinal\Pruebas\bin\Debug\net5.0\testhost.exe
+C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito.Eduard.2D.TPFinal\Pruebas\bin\Debug\net5.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito.Eduard.2D.TPFinal\Pruebas\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito.Eduard.2D.TPFinal\Pruebas\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito.Eduard.2D.TPFinal\Pruebas\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito.Eduard.2D.TPFinal\Pruebas\bin\Debug\net5.0\Microsoft.TestPlatform.AdapterUtilities.dll
-C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito.Eduard.2D.TPFinal\Pruebas\bin\Debug\net5.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito.Eduard.2D.TPFinal\Pruebas\bin\Debug\net5.0\Pruebas.deps.json
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito.Eduard.2D.TPFinal\Pruebas\bin\Debug\net5.0\Pruebas.runtimeconfig.json
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito.Eduard.2D.TPFinal\Pruebas\bin\Debug\net5.0\Pruebas.runtimeconfig.dev.json

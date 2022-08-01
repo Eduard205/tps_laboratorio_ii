@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenuPrincipal));
             this.pictureBox2Logo = new System.Windows.Forms.PictureBox();
             this.BtnVender = new System.Windows.Forms.Button();
@@ -48,7 +48,7 @@
             this.pictureBox2Logo.Image = global::Formularios.Properties.Resources.Logo_PNG_2;
             this.pictureBox2Logo.Location = new System.Drawing.Point(12, 12);
             this.pictureBox2Logo.Name = "pictureBox2Logo";
-            this.pictureBox2Logo.Size = new System.Drawing.Size(142, 63);
+            this.pictureBox2Logo.Size = new System.Drawing.Size(207, 97);
             this.pictureBox2Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2Logo.TabIndex = 0;
             this.pictureBox2Logo.TabStop = false;
@@ -63,6 +63,7 @@
             this.BtnVender.TabIndex = 1;
             this.BtnVender.Text = "Vender";
             this.BtnVender.UseVisualStyleBackColor = false;
+            this.BtnVender.Click += new System.EventHandler(this.BtnVender_Click);
             // 
             // BtnInventario
             // 
@@ -104,14 +105,14 @@
             // 
             this.DataGridListaClientes.AllowUserToAddRows = false;
             this.DataGridListaClientes.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridListaClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridListaClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DataGridListaClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridListaClientes.EnableHeadersVisualStyles = false;
             this.DataGridListaClientes.Location = new System.Drawing.Point(277, 143);

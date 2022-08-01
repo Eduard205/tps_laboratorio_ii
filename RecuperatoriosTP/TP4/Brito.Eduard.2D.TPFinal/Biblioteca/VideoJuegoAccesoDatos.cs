@@ -56,41 +56,5 @@ namespace Biblioteca
                 connection.Close();
             }
         }
-
-        /// <summary>
-        /// Guarda VideoJuegos en la base de datos (LISTA_VIDEOJUEGOS)
-        /// </summary>
-        /// <param name="nombreVideoJuego"></param>
-        /// <param name="nombreVideoConsola"></param>
-        /// <param name="precio"></param>
-        /// <param name="stock"></param>
-        /// <exception cref="Exception"></exception>
-        public static void Guardar(string nombreVideoJuego, ENombreVideoConsola nombreVideoConsola, float precio, int stock)
-        {
-            try
-            {
-                command.Parameters.Clear();
-                connection.Open();
-                command.CommandText = $"INSERT INTO VideoJuegos (NombreVideoJuego) VALUES (@NombreVideoJuego)";
-                command.Parameters.AddWithValue("@NombreVideoJuego", nombreVideoJuego);
-                command.CommandText = $"INSERT INTO VideoJuegos (NombreVideoConsola) VALUES (@NombreVideoConsola)";
-                command.Parameters.AddWithValue("@NombreVideoConsola", nombreVideoConsola);
-                command.CommandText = $"INSERT INTO VideoJuegos (Precio) VALUES (@Precio)";
-                command.Parameters.AddWithValue("@Precio", precio);
-                command.CommandText = $"INSERT INTO VideoJuegos (Stock) VALUES (@Stock)";
-                command.Parameters.AddWithValue("@Stock", stock);
-
-                int rows = command.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Error al Guardar la Base de Datos", ex);
-            }
-            finally 
-            {
-                connection.Close(); 
-            }
-        }
-
     }
 }

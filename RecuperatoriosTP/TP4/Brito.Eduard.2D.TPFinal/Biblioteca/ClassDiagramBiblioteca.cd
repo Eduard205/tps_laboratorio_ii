@@ -38,7 +38,7 @@
   <Class Name="Biblioteca.VideoJuego" BaseTypeListCollapsed="true">
     <Position X="4" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAEAAAADAAAAAAACAAAAQgAMgEIAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAEAAAADAEAAAAACAAAAQgAMwEIAAAAAAAAAAAAA=</HashCode>
       <FileName>VideoJuego.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
@@ -46,8 +46,15 @@
   <Class Name="Biblioteca.VideoJuegoAccesoDatos">
     <Position X="0.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAQAAAAAIAAABBAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAQAAAAAIAAAABAAAAA=</HashCode>
       <FileName>VideoJuegoAccesoDatos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Biblioteca.ExtIntDni" Collapsed="true">
+    <Position X="5.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>ExtIntDni.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="Biblioteca.IReponerStock" Collapsed="true">

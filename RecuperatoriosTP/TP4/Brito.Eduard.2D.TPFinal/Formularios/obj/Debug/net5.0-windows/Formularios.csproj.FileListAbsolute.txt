@@ -74,6 +74,7 @@ C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito.Eduard.2D.TPFinal\Formularios\obj\Debug\net5.0-windows\Formularios.FrmLogin.resources
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito.Eduard.2D.TPFinal\Formularios\obj\Debug\net5.0-windows\Formularios.FrmMenuCliente.resources
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito.Eduard.2D.TPFinal\Formularios\obj\Debug\net5.0-windows\Formularios.FrmMenuPrincipal.resources
+C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito.Eduard.2D.TPFinal\Formularios\obj\Debug\net5.0-windows\Formularios.FrmMenuVender.resources
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito.Eduard.2D.TPFinal\Formularios\obj\Debug\net5.0-windows\Formularios.Properties.Resources.resources
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito.Eduard.2D.TPFinal\Formularios\obj\Debug\net5.0-windows\Formularios.csproj.GenerateResource.cache
 C:\Users\eduar\OneDrive\Documentos\tps_laboratorio_ii\RecuperatoriosTP\TP4\Brito.Eduard.2D.TPFinal\Formularios\obj\Debug\net5.0-windows\Formularios.GeneratedMSBuildEditorConfig.editorconfig

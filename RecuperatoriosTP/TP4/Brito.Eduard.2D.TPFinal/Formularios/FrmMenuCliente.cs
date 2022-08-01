@@ -165,7 +165,7 @@ namespace Formularios
         {
             delegadoMostrar();
             MessageBox.Show($"Se dio de alta al cliente: {nombre}");
-        } 
+        }
 
     }
 }

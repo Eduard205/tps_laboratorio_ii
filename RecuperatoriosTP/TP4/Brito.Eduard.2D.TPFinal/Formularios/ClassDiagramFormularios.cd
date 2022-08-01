@@ -3,7 +3,7 @@
   <Class Name="Formularios.FrmMenuPrincipal">
     <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABgAEAAAIiAAAAASBACAARACQAIABBAAAAAAAgAAAAA=</HashCode>
+      <HashCode>ABgAEAAAIiAAAAISBACAFBACQAMABBAAAAAAAgAAAAA=</HashCode>
       <FileName>FrmMenuPrincipal.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -24,8 +24,15 @@
   <Class Name="Formularios.FrmInventario">
     <Position X="6.5" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABCAAAAEgABCAAABCAACAAAAEAABAABAAAAA=</HashCode>
+      <HashCode>AAAAAAAABCAAAAEgABCAAABCAACgAAAEAABAAhAAAAA=</HashCode>
       <FileName>FrmInventario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.FrmMenuVender">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQIAVAAQXKAgAAAgAASCAAhCAAS4VwAAAAAQAogAgAA=</HashCode>
+      <FileName>FrmMenuVender.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Delegate Name="Formularios.DelegadoMostrar" Collapsed="true">

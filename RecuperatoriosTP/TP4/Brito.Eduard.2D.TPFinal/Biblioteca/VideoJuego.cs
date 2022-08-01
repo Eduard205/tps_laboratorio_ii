@@ -110,7 +110,7 @@ namespace Biblioteca
         /// <returns>true si pudo vender el Stock, de lo contrario es false</returns>
         public bool VenderStock(int cantidad)
         {
-            if (cantidad > 0 && Stock > cantidad)
+            if (cantidad > 0 && Stock >= cantidad)
             {
                 DisminuirStock = cantidad;
                 return true;
